@@ -22,7 +22,7 @@ A complete Kafka-based order processing system featuring Avro serialization, rea
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/MoraisMNS/kafka_assignment_4077
 cd kafka-order-processing
 ```
 
@@ -175,7 +175,7 @@ kafka-order-processing/
 ```
 🚀 Starting to produce 20 orders...
 
-📦 Producing order: {'orderId': '1000', 'product': 'Laptop', 'price': 899.99}
+📦 Producing order: {'orderId': '1000', 'product': 'Lipstick', 'price': 899.99}
 ✅ Message delivered to orders [0] at offset 0
 ```
 
@@ -183,13 +183,13 @@ kafka-order-processing/
 ```
 🎯 Consumer started. Waiting for messages...
 
-✅ Processed: Order 1000 | Product: Laptop | Price: $899.99
-   📊 Running Avg: $899.99 | Overall Avg: $899.99 | Total Orders: 1
+✅ Processed: Order 1000 | Product: Lipstick | Price: Rs.899.99
+   📊 Running Avg: Rs.899.99 | Overall Avg: Rs.899.99 | Total Orders: 1
 
 ⚠️  Processing error: Processing failed for order 1001
 🔄 Retry 1/3 for order 1001
-✅ Processed: Order 1001 | Product: Phone | Price: $699.50
-   📊 Running Avg: $799.75 | Overall Avg: $799.75 | Total Orders: 2
+✅ Processed: Order 1001 | Product: Foundation | Price: $699.50
+   📊 Running Avg: Rs.799.75 | Overall Avg: Rs.799.75 | Total Orders: 2
 
 💀 Sent to DLQ: Order 1002 after 3 retries
 ```
