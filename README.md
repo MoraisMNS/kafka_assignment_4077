@@ -188,7 +188,7 @@ kafka-order-processing/
 
 ⚠️  Processing error: Processing failed for order 1001
 🔄 Retry 1/3 for order 1001
-✅ Processed: Order 1001 | Product: Foundation | Price: $699.50
+✅ Processed: Order 1001 | Product: Foundation | Price: Rs.699.50
    📊 Running Avg: Rs.799.75 | Overall Avg: Rs.799.75 | Total Orders: 2
 
 💀 Sent to DLQ: Order 1002 after 3 retries
