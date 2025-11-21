@@ -45,7 +45,7 @@ def create_producer():
 
 def generate_order(order_num):
     """Generate a random order message"""
-    products = ['Laptop', 'Phone', 'Tablet', 'Headphones', 'Mouse', 'Keyboard']
+    products = ['Lipstick', 'Foundation', 'Eyeliner', 'Mascara', 'Face Cream', 'Perfume']
     return {
         'orderId': f'{1000 + order_num}',
         'product': random.choice(products),

@@ -142,9 +142,9 @@ def process_order(order, aggregator):
     price = order['price']
     aggregator.add_price(price)
     
-    print(f'✅ Processed: Order {order_id} | Product: {order["product"]} | Price: ${price:.2f}')
+    print(f'✅ Processed: Order {order_id} | Product: {order["product"]} | Price: Rs.{price:.2f}')
     stats = aggregator.get_stats()
-    print(f'   📊 Running Avg: ${stats["running_average"]:.2f} | Overall Avg: ${stats["overall_average"]:.2f} | Total Orders: {stats["total_orders"]}')
+    print(f'   📊 Running Avg: Rs.{stats["running_average"]:.2f} | Overall Avg: Rs.{stats["overall_average"]:.2f} | Total Orders: {stats["total_orders"]}')
     
     return True
 
